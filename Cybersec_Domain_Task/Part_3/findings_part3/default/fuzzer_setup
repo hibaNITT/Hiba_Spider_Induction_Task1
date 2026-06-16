@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=./fuzzer
+AFL_CUSTOM_INFO_PROGRAM_ARGV=
+AFL_CUSTOM_INFO_OUT=findings_part3//default
+# command line:
+'afl-fuzz' '-i' 'inputs/' '-o' 'findings_part3/' '--' './fuzzer'
