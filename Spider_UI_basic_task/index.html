@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoEra - Premium Music Streaming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="#hero" aria-label="EchoEra home">
+                <span class="brand-mark">E</span>
+                <span class="brand-copy">
+                    <strong>EchoEra</strong>
+                    <span>Premium listening, curated daily</span>
+                </span>
+            </a>
+
+            <nav class="topnav" aria-label="Primary navigation">
+                <a href="#featured">Featured</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#stories">Stories</a>
+            </nav>
+
+            <a class="btn btn-secondary btn-small" href="#pricing">Start free</a>
+        </header>
+
+        <main>
+            <section class="hero section-frame" id="hero">
+                <div class="hero-copy stack-lg">
+                    <span class="eyebrow">Premium music streaming for modern listeners</span>
+                    <h1>Discover music that feels <span>personal, cinematic, and effortless.</span></h1>
+                    <p class="lede">EchoEra pairs editorial playlists, high-fidelity audio, and smooth offline access in
+                        one elegant home for albums, artists, and late-night discoveries.</p>
+
+                    <div class="button-row">
+                        <a class="btn btn-primary" href="#pricing">Try Premium Free</a>
+                        <a class="btn btn-secondary" href="#featured">Browse playlists</a>
+                    </div>
+
+                    <div class="hero-metrics" aria-label="Service highlights">
+                        <div class="metric-card">
+                            <strong>120M+</strong>
+                            <span>Tracks & mixes</span>
+                        </div>
+                        <div class="metric-card">
+                            <strong>1 tap</strong>
+                            <span>Offline listening</span>
+                        </div>
+                        <div class="metric-card">
+                            <strong>Spatial</strong>
+                            <span>Immersive audio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual hero-visual-desktop" aria-label="Desktop hero preview">
+                    <div class="visual-stage">
+                        <article class="now-playing-card card-surface cover-focus">
+                            <img src="assets/hero-image.svg" alt="Featured album artwork" class="hero-cover">
+                            <div>
+                                <span class="eyebrow eyebrow-tight">Now playing</span>
+                                <h2>Midnight City Lights</h2>
+                                <p>Curated for after-hours focus and smooth city drives.</p>
+                            </div>
+                        </article>
+
+                        <article class="floating-card card-surface floating-card-top">
+                            <img src="assets/mixtape1.svg" alt="Chill Vibes cover art" class="floating-cover">
+                            <div>
+                                <strong>Chill Vibes</strong>
+                                <span>Dream pop and soft beats</span>
+                            </div>
+                        </article>
+
+                        <article class="floating-card card-surface floating-card-right">
+                            <img src="assets/vinyl.png" alt="Vinyl record cover art" class="floating-cover">
+                            <div>
+                                <strong>Analog Nights</strong>
+                                <span>Warm textures, modern mixes</span>
+                            </div>
+                        </article>
+
+                        <article class="mini-player card-surface">
+                            <span class="mini-wave"></span>
+                            <div>
+                                <strong>Editorial Flow</strong>
+                                <p>Updated daily at 8 AM</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="hero-visual hero-visual-mobile" aria-label="Mobile hero preview">
+                    <div class="phone-shell card-surface">
+                        <span class="eyebrow eyebrow-tight">Mobile preview</span>
+                        <img src="assets/mixtape.png" alt="Featured mix artwork" class="phone-cover">
+                        <div class="phone-meta">
+                            <strong>Endless Routines</strong>
+                            <p>Tap, save, and keep playing offline.</p>
+                        </div>
+                        <div class="phone-controls">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-frame" id="featured">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Featured content</span>
+                        <h2>Playlists and albums worth opening first.</h2>
+                    </div>
+                    <p class="section-intro">A mix of mood-driven playlists, album picks, and artist spotlights designed
+                        to feel editorial, not generic.</p>
+                </div>
+
+                <div class="content-grid feature-grid">
+                    <article class="content-card card-surface">
+                        <img src="assets/mixtape1.svg" alt="Chill Vibes playlist cover" class="content-cover">
+                        <div>
+                            <span class="card-label">Playlist</span>
+                            <h3>Chill Vibes</h3>
+                            <p>Soft synths, warm vocals, and low-light listening.</p>
+                        </div>
+                    </article>
+
+                    <article class="content-card card-surface">
+                        <img src="assets/mixtape2.svg" alt="Workout Beats playlist cover" class="content-cover">
+                        <div>
+                            <span class="card-label">Playlist</span>
+                            <h3>Workout Beats</h3>
+                            <p>High-energy drops that keep your pace locked in.</p>
+                        </div>
+                    </article>
+
+                    <article class="content-card card-surface">
+                        <img src="assets/mixtape3.svg" alt="Late Night Jams playlist cover" class="content-cover">
+                        <div>
+                            <span class="card-label">Playlist</span>
+                            <h3>Late Night Jams</h3>
+                            <p>Headphones on, volume low, mood fully set.</p>
+                        </div>
+                    </article>
+
+                    <article class="content-card card-surface">
+                        <img src="assets/mixtape.png" alt="Weekend groove album cover" class="content-cover">
+                        <div>
+                            <span class="card-label">Album</span>
+                            <h3>Weekend Groove</h3>
+                            <p>Fresh releases and smooth transitions for long evenings.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-frame" id="features">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Value proposition</span>
+                        <h2>Built around listening habits, not just catalog size.</h2>
+                    </div>
+                    <p class="section-intro">Four core features support a calmer, faster, and more personal streaming
+                        experience.</p>
+                </div>
+
+                <div class="feature-grid icons-grid">
+                    <article class="feature-card card-surface">
+                        <span class="icon-wrap" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="img" aria-label="Personalized mixes icon">
+                                <path d="M4 14.5c2.5-5 6-7.5 10.5-7.5S20 9.5 20 14.5" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" />
+                                <path d="M7 18c1.5-3 3.6-4.5 6.5-4.5S18 15 19 18" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" />
+                                <circle cx="12" cy="19" r="1.5" fill="currentColor" />
+                            </svg>
+                        </span>
+                        <h3>Personalized mixes</h3>
+                        <p>Daily recommendations shaped by how you actually listen, skip, and save.</p>
+                    </article>
+
+                    <article class="feature-card card-surface">
+                        <span class="icon-wrap" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="img" aria-label="Offline downloads icon">
+                                <path d="M12 4v10" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                                <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5 19h14" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <h3>Offline listening</h3>
+                        <p>Keep entire albums and playlists ready for commutes, flights, and dead zones.</p>
+                    </article>
+
+                    <article class="feature-card card-surface">
+                        <span class="icon-wrap" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="img" aria-label="Immersive audio icon">
+                                <path d="M8 7l8 5-8 5z" fill="currentColor" />
+                                <path d="M4.5 8.5a10 10 0 0 0 0 7" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                                <path d="M19.5 8.5a10 10 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                        <h3>Immersive audio</h3>
+                        <p>Hear layered mixes with a wider soundstage on supported devices.</p>
+                    </article>
+
+                    <article class="feature-card card-surface">
+                        <span class="icon-wrap" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="img" aria-label="Shared listening icon">
+                                <path d="M12 5a3 3 0 1 0 0.01 0" fill="none" stroke="currentColor" stroke-width="1.8" />
+                                <path d="M5 19c0-3.2 2.6-5.5 7-5.5s7 2.3 7 5.5" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" stroke-linecap="round" />
+                                <path d="M15.5 9.5a2.2 2.2 0 1 1 0 .01" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" />
+                            </svg>
+                        </span>
+                        <h3>Shared sessions</h3>
+                        <p>Family queues and collaborative playlists keep listening social without friction.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-frame" id="pricing">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Subscription tiers</span>
+                        <h2>A plan for casual listeners, power users, and families.</h2>
+                    </div>
+                    <p class="section-intro">Premium is highlighted as the best balance of quality, convenience, and
+                        value.</p>
+                </div>
+
+                <div class="plan-grid">
+                    <article class="plan-card card-surface">
+                        <span class="chip">Free</span>
+                        <h3>$0</h3>
+                        <p class="plan-subtitle">For trying the catalog and getting a feel for the app.</p>
+                        <ul class="plan-list">
+                            <li>Shuffle playback with ads</li>
+                            <li>Standard audio quality</li>
+                            <li>Limited skips</li>
+                        </ul>
+                        <a class="btn btn-secondary btn-block" href="#footer">Choose Free</a>
+                    </article>
+
+                    <article class="plan-card card-surface plan-card-featured">
+                        <span class="chip chip-accent">Most popular</span>
+                        <h3>$9.99</h3>
+                        <p class="plan-subtitle">The recommended plan for the full EchoEra experience.</p>
+                        <ul class="plan-list">
+                            <li>No ads, any time</li>
+                            <li>High-fidelity audio and offline downloads</li>
+                            <li>Unlimited skips and personalized mixes</li>
+                        </ul>
+                        <a class="btn btn-primary btn-block" href="#footer">Start Premium</a>
+                    </article>
+
+                    <article class="plan-card card-surface">
+                        <span class="chip">Family</span>
+                        <h3>$14.99</h3>
+                        <p class="plan-subtitle">Shared access for households that want one musical home.</p>
+                        <ul class="plan-list">
+                            <li>Up to 6 accounts</li>
+                            <li>Family playlists and shared queues</li>
+                            <li>All Premium features included</li>
+                        </ul>
+                        <a class="btn btn-secondary btn-block" href="#footer">Choose Family</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-frame" id="stories">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Social proof</span>
+                        <h2>Listeners describe EchoEra as calm, fast, and surprisingly personal.</h2>
+                    </div>
+                    <p class="section-intro">Three testimonial cards show how the product feels across commuting,
+                        working, and shared listening.</p>
+                </div>
+
+                <div class="testimonial-grid">
+                    <article class="testimonial-card card-surface">
+                        <p>“The recommendations feel curated by a person who knows my taste better than I do.”</p>
+                        <strong>Jade, creative director</strong>
+                    </article>
+
+                    <article class="testimonial-card card-surface">
+                        <p>“Offline downloads and the clean queue are the two things I use every day on my commute.”</p>
+                        <strong>Marcus, product designer</strong>
+                    </article>
+
+                    <article class="testimonial-card card-surface">
+                        <p>“My family finally shares one music app without stepping on each other’s playlists.”</p>
+                        <strong>Priya, parent of three</strong>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer section-frame" id="footer">
+            <div class="footer-newsletter card-surface">
+                <div>
+                    <span class="eyebrow">Newsletter</span>
+                    <h2>Get weekly drops, feature updates, and playlist picks.</h2>
+                </div>
+
+                <form id="newsletter-form" class="newsletter-form" onsubmit="return subscribeNewsletter()">
+                    <label class="sr-only" for="newsletter-email">Email address</label>
+                    <input id="newsletter-email" type="email" placeholder="Enter your email" required
+                        class="newsletter-input">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-links-grid">
+                <div>
+                    <a class="brand brand-footer" href="#hero">
+                        <span class="brand-mark">E</span>
+                        <span class="brand-copy">
+                            <strong>EchoEra</strong>
+                            <span>Sound, refined</span>
+                        </span>
+                    </a>
+                    <p class="footer-copy">A fictional premium music streaming concept built around atmosphere, clarity,
+                        and responsive layouts.</p>
+                </div>
+
+                <div>
+                    <h3>Essential links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#featured">Featured content</a></li>
+                        <li><a href="#features">Value proposition</a></li>
+                        <li><a href="#pricing">Subscription tiers</a></li>
+                        <li><a href="#stories">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Social</h3>
+                    <div class="social-row" aria-label="Social media links">
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                                <path
+                                    d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm5 5.5A3.5 3.5 0 1 0 12 16a3.5 3.5 0 0 0 0-7Zm5.5-1.3a1 1 0 1 0 0 .01"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="X" class="social-link">
+                            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                                <path d="M5 4h4.2l4.2 5.6L18.8 4H21l-6.8 8.9L21 20h-4.2l-4.4-5.8L7 20H3l7.2-9.5Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link">
+                            <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                                <path
+                                    d="M20.5 7.5a3 3 0 0 0-2.1-2.1C16.6 5 12 5 12 5s-4.6 0-6.4.4A3 3 0 0 0 3.5 7.5 31 31 0 0 0 3 12a31 31 0 0 0 .5 4.5 3 3 0 0 0 2.1 2.1C7.4 19 12 19 12 19s4.6 0 6.4-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 21 12a31 31 0 0 0-.5-4.5ZM10 15V9l5 3-5 3Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-note">© 2026 EchoEra. Designed for the landing page brief.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

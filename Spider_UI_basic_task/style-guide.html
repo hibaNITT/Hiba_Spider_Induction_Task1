@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoEra - Style Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="index.html" aria-label="Back to EchoEra landing page">
+                <span class="brand-mark">E</span>
+                <span class="brand-copy">
+                    <strong>EchoEra</strong>
+                    <span>Internal style guide</span>
+                </span>
+            </a>
+            <a class="btn btn-secondary btn-small" href="index.html">View landing page</a>
+        </header>
+
+        <main>
+            <section class="section-frame">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Component library</span>
+                        <h2>Reusable UI primitives for buttons, cards, and chips.</h2>
+                    </div>
+                    <p class="section-intro">This internal page documents the system used on the production landing page
+                        without exposing it in the main user flow.</p>
+                </div>
+
+                <div class="library-grid">
+                    <article class="library-panel card-surface">
+                        <h3>Button variants</h3>
+                        <div class="button-row button-sample-row">
+                            <a class="btn btn-primary" href="#">Primary</a>
+                            <a class="btn btn-secondary" href="#">Secondary</a>
+                            <a class="btn btn-ghost" href="#">Ghost</a>
+                        </div>
+                        <div class="chip-row">
+                            <span class="chip">Small</span>
+                            <span class="chip chip-accent">Recommended</span>
+                            <span class="chip">Outline</span>
+                        </div>
+                    </article>
+
+                    <article class="library-panel card-surface">
+                        <h3>Reusable cards</h3>
+                        <div class="mini-card-list">
+                            <div class="mini-card">
+                                <strong>Content card</strong>
+                                <span>Artwork, label, title, description.</span>
+                            </div>
+                            <div class="mini-card">
+                                <strong>Feature card</strong>
+                                <span>Icon, headline, supporting copy.</span>
+                            </div>
+                            <div class="mini-card">
+                                <strong>Plan card</strong>
+                                <span>Pricing, benefits, CTA.</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-frame">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Palette</span>
+                        <h2>Six documented color styles.</h2>
+                    </div>
+                    <p class="section-intro">The public page uses these tokens consistently for surfaces, accents, text,
+                        and borders.</p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card card-surface"><span class="chip">Background</span>
+                        <h3>#07070B</h3>
+                        <p>Main canvas and page backdrop.</p>
+                    </article>
+                    <article class="feature-card card-surface"><span class="chip">Surface</span>
+                        <h3>#131521</h3>
+                        <p>Cards and elevated panels.</p>
+                    </article>
+                    <article class="feature-card card-surface"><span class="chip">Accent</span>
+                        <h3>#8B6CFF</h3>
+                        <p>Primary call-to-action color.</p>
+                    </article>
+                    <article class="feature-card card-surface"><span class="chip">Accent 2</span>
+                        <h3>#26D0C9</h3>
+                        <p>Highlights and eyebrow labels.</p>
+                    </article>
+                    <article class="feature-card card-surface"><span class="chip">Muted</span>
+                        <h3>#A5ABC2</h3>
+                        <p>Supporting body copy.</p>
+                    </article>
+                    <article class="feature-card card-surface"><span class="chip">Border</span>
+                        <h3>09% White</h3>
+                        <p>Separation lines and card strokes.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-frame">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">Typography</span>
+                        <h2>Consistent heading and body scale.</h2>
+                    </div>
+                    <p class="section-intro">Display type is used for hero and section headings; body text stays on the
+                        same sans family.</p>
+                </div>
+
+                <div class="library-grid">
+                    <article class="library-panel card-surface">
+                        <h3>Display</h3>
+                        <p class="lede">Fraunces, 3rem to 5.6rem for hero copy and larger section titles.</p>
+                    </article>
+                    <article class="library-panel card-surface">
+                        <h3>Body</h3>
+                        <p class="lede">Space Grotesk, 0.78rem to 1.1rem for labels, body text, and supporting copy.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
