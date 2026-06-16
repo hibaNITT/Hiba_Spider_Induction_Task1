@@ -10,6 +10,12 @@ I am still learning fuzzing and secure coding, The repo has 3 parts and each par
 - Part 2 is about making a small fuzzing harness for `license.c`.
 - Part 3 is about fuzzing the `json-c` library with my own harness.
 
+## Project Demo Videos
+
+- [Video 1](https://drive.google.com/file/d/1WHQ2V1vjBTwAd1C6WGoL3OizRrxHmHkZ/view?usp=sharing)
+- [Video 2](https://drive.google.com/file/d/1qtxzqRlpYK2VTNFNm2D1ECfT_g2p-878/view?usp=sharing)
+- [Video 3](https://drive.google.com/file/d/11PRKsg3e7Qcd28QigoTsL4zWnowtGUv_/view?usp=sharing)
+
 ## Part 1 - `xarinfo`
 
 This part is about a command line program that reads `.xar` files and prints information about them.
@@ -26,11 +32,11 @@ I used AFL++ to send lots of random inputs to the program and see if it crashes.
 ### Basic build and run
 
 ```bash
-cd Part_1
-make
-make asan
-make test
-./xarinfo <file.xar>
+cd Cybersec_Domain_Task/Part_1
+make clean
+make CC=afl-clang-fast
+afl-fuzz -v
+afl-fuzz -i inputs/ -o findings_part1/ -- ./xarinfo
 ```
 
 ### My note
@@ -52,10 +58,10 @@ At first my harness was not working well, but I changed it and tried persistent 
 ### Basic build and run
 
 ```bash
-cd Part_2
-make
-./fuzzer < corpus/seed.txt
-afl-fuzz -i corpus/ -o findings/ -- ./fuzzer
+cd ../part_2
+afl-clang-fast -fsanitize=address -g afl_harness.c license.c -o fuzzer
+./fuzzer corpus/seed01.bin
+afl-fuzz -i corpus/ -o findings/ -- ./fuzzer @@
 ```
 
 ### My note
@@ -78,11 +84,11 @@ I made a custom harness for it and used AFL++ again because I was already more f
 ### Basic build and run
 
 ```bash
-cd Part_3/json-c
-cmake -DCMAKE_C_FLAGS="-fsanitize=address -g" ..
-make
-cd ..
-afl-fuzz -i inputs/ -o findings_part3/ -- ./fuzzer
+cd ../Part_3
+afl-clang-fast -fsanitize=address -g json-c/harness.c json-c/build/libjson-c.a -I json-c/ -I json-c/build/ -o ./fuzzer_part3
+./fuzzer_part3 < inputs/seed1.json
+afl-fuzz -i inputs/ -o findings_part3/ -- ./fuzzer_part3
+ls -la findings_part3/default/
 ```
 
 ### My note
