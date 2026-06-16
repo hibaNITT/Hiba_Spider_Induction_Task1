@@ -12,9 +12,9 @@ I am still learning fuzzing and secure coding, The repo has 3 parts and each par
 
 ## Project Demo Videos
 
-- [Video 1](https://drive.google.com/file/d/1WHQ2V1vjBTwAd1C6WGoL3OizRrxHmHkZ/view?usp=sharing)
-- [Video 2](https://drive.google.com/file/d/1qtxzqRlpYK2VTNFNm2D1ECfT_g2p-878/view?usp=sharing)
-- [Video 3](https://drive.google.com/file/d/11PRKsg3e7Qcd28QigoTsL4zWnowtGUv_/view?usp=sharing)
+- [Part 1](https://drive.google.com/file/d/11PRKsg3e7Qcd28QigoTsL4zWnowtGUv_/view?usp=sharing)
+- [Part 2](https://drive.google.com/file/d/1qtxzqRlpYK2VTNFNm2D1ECfT_g2p-878/view?usp=sharing)
+- [Part 3](https://drive.google.com/file/d/1WHQ2V1vjBTwAd1C6WGoL3OizRrxHmHkZ/view?usp=sharing)
 
 ## Part 1 - `xarinfo`
 
